@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Vidaloka', serif;
+  background-color: #00f7ff;
+  display: flex;
+  padding-top: 3rem;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0 3rem;
+}
+
+.col {
+  flex: 1;
+  height: 90vh;
+}
+
+.col-header {
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+  border-radius: 0.3rem;
+}
+
+.separator {
+  margin: 0 0.5rem;
+  height: 100%;
+  border: 1px solid rgba(0, 39, 146, 0.1);
+}
+
+.placeholder {
+  border: 2px solid transparent;
+  margin-top: 1rem;
+  padding-right: 0.25rem;
+  height: calc(100% - 4rem);
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+::-webkit-scrollbar-track {
+  background: rgba(5, 202, 252, 0.815);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 105, 0.3);
+  border-radius: 20rem;
+}
+
+.item {
+  width: 100%;
+  margin-bottom: 1rem;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f7f6f7;
+  border: 1px solid #eee;
+  padding: 0.8rem 1rem;
+  color: #004042;
+  font-size: 1.1rem;
+  text-align: center;
+  cursor: grab;
+}
+
+.item:active {
+  cursor: grabbing;
+}
+
+.hold {
+  color: gray;
+  background-color: #fff;
+}
+
+.hide {
+  display: none;
+}
+
+.start {
+  background: linear-gradient(90deg, #ff85e4 0%, #229efd 179.25%);
+}
+.progress {
+  background: linear-gradient(90deg, #209cff 0%, #68e0cf 100%);
+}
+.done {
+  background: linear-gradient(90deg, #049e49 0%, #00ff37f3 100%);
+}
+.delete {
+  background: linear-gradient(90deg, #fa0303d8 0%, #ec8f03 100%);
+}
+
+.placeholder.hovered.task-start {
+  border: 2px dashed rgba(253, 220, 30, 0.7);
+}
+.placeholder.hovered.task-progress {
+  border: 2px dashed rgba(52, 172, 224, 0.7);
+}
+.placeholder.hovered.task-done {
+  border: 2px dashed rgba(51, 217, 178, 0.7);
+}
+.placeholder.hovered.task-delete {
+  border: 2px dashed rgba(255, 34, 5, 0.8);
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Drag & Drop | App 2</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col">
+        <div class="col-header start">To do</div>
+
+        <div data-type="start" class="placeholder task-start">
+          <div id="Task[1]" class="item" draggable="true">go dancing</div>
+          <div id="Task[2]" class="item" draggable="true">read a book</div>
+          <div id="Task[3]" class="item" draggable="true">go to the shop</div>
+          <div id="Task[4]" class="item" draggable="true">go to training</div>
+          <div id="Task[6]" class="item" draggable="true">film a video</div>
+          <div id="Task[7]" class="item" draggable="true">write a script</div>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="col">
+        <div class="col-header progress">In progress</div>
+        <div data-type="progress" class="placeholder task-progress">
+          <div id="Task[8]" class="item" draggable="true">save up for a car</div>
+          <div id="Task[9]" class="item" draggable="true">prepare the house for the holiday</div>
+          <div id="Task[10]" class="item" draggable="true">buy gifts</div>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="col">
+        <div class="col-header done">Done</div>
+        <div data-type="done" class="placeholder task-done">
+          <div id="Task[5]" class="item" draggable="true">fix the shelf</div>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="col">
+        <div class="col-header delete">Delete</div>
+        <div data-type="delete" class="placeholder task-delete"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
